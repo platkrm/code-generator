@@ -59,6 +59,7 @@ func NameSystems(pluralExceptions map[string]string) namer.NameSystems {
 			// you can put your fully qualified package like
 			// to generate a name that doesn't conflict with your group.
 			// "k8s.io/apis/events/v1beta1.Event": "eventResource"
+		        "github.com/GoogleContainerTools/kpt/porch/api/porch/v1alpha1.Package": "pkg",
 		},
 		KeyFunc: func(t *types.Type) string {
 			return t.Name.Package + "." + t.Name.Name
